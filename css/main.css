@@ -1,0 +1,455 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:600);
+@charset "UTF-8";
+/* CSS Document */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
+acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,
+sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,
+hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	font-family: 'Dosis', sans-serif;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	position: static;
+	height: auto;
+}
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
+{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}
+
+blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+i{font-style: italic;}
+strong{font-weight: bolder;color:#cccccc;}
+
+
+
+/*************************/
+/******** GENERAL ********/
+/*************************/
+
+/* SHRINK HOVER SETTINGS */
+.hvr-shrink {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+
+.opacity:hover {
+	opacity: .5;
+}
+
+.imgSizer {
+	width: 100%;
+}
+
+.mobile {
+	display: none;
+}
+
+/************************/
+/******** LAYOUT ********/
+/************************/
+body {
+	background-color: #4d4d4d;
+	background-image: url("../images/cloudy_city_dark_2.jpg");
+	background-repeat:no-repeat;
+	-webkit-background-size:auto;
+	-moz-background-size:auto;
+	-o-background-size:auto;
+    background-size: auto;
+	background-position:top center;
+	
+}
+
+.container {
+	width: 85%;
+	max-width: 850px;
+	margin: 0px auto;
+	border: 0px solid #fff;
+}
+
+/************************/
+/******** HEADER ********/
+/************************/
+.header {
+	width: 100%;
+	color: #000000;
+	border: 0px solid #000;
+	margin-bottom: 105%;
+}
+
+.header-container {
+	/*border: 0px solid #17C926;*/
+	width: 100%;
+	margin: 5% auto 0%;
+
+}
+
+/* City in the Clouds logo */
+.logo {
+	width: 70%;
+	border: 0px solid #000;
+	margin: 0% auto 2%;
+}
+
+
+
+/* Purchase Links */
+.purchase-container {
+	width: 95%;
+	border: 0px solid #BB0D10;
+	margin: 0px auto 2%;
+	
+}
+
+.purchase-link {
+	margin-right: 3.5%;
+	display: inline-block;
+	border: 0px solid #fff;
+}
+
+
+/************************/
+/******** CONTENT *******/
+/************************/
+.content {
+	width: 100%;
+	border: 0px solid #D40408;
+}
+
+.announcement {
+	height: 50%;
+	width: 10%;
+}
+.announcement img {
+	width: 300%;
+	height: auto;
+	
+}
+
+.content-container {
+	border: 0px solid #fff;
+	margin: 0px auto;	
+	min-height: 1200px;
+
+}
+
+
+/************************/
+/******** FOOTER ********/
+/************************/
+.footer {
+	width: 93.5%;
+	border: 0px solid #0A6018;
+	margin: 0px auto 10%;
+}
+
+.footer-container {
+	width: 67.5%; 
+	border: 0px solid #6AB973;
+	margin: 0px auto;	
+	max-width: 550px;
+
+}
+
+
+.available-jan {
+	width: 41.5%;
+	margin: 0% 5% 4% 0%;
+	border: 0px solid #fff;
+}
+
+
+/* Navigation */
+.navigation-container {
+	width: 100%;
+	margin: 0px auto 4%;
+	border: 0px solid #fff;
+}
+
+.navigation {
+	display: inline-block;
+	padding-right: 5%;
+	margin: 0px auto;
+	padding-left: 1%;
+}
+
+#music { width: 9.6%; }
+#video { width: 8.905%; }
+#tour { width: 7.465%; }
+#contact { width: 13.5%; }
+
+
+/* Social Link */
+.social-container {
+	width: 100%;
+	margin: 0px auto 4%;
+	max-width: 550px;
+}
+
+.social-link {
+	display: inline-block;
+	margin-right: 5%;
+	vertical-align: middle;
+}
+
+#facebook { width: 4.52%; }
+#twitter { width: 4.52%; }
+#instagram { width: 4.52%; }
+#anti { width: 7.09%; }
+#mailing-list { width: 6.633%; }
+#big-cartel { width: 4.52%; }
+
+/* Copyright */
+.copyright-container {
+	width: 100%;	
+	margin: 0px auto;
+	border: 0px solid #189A12;
+}
+
+.copyright {
+	margin: 0px auto;
+	width: 15%;
+
+}
+
+
+
+
+
+
+
+/*******************************/
+/******** MEDIA QUERIES ********/
+/*******************************/
+@media screen and (min-width:1621px) and (max-width : 1720px) {
+.header {
+	width: 95%;
+	border: 0px solid #000;
+	margin: 0px auto 90%;
+}
+
+.header-container {
+	width: 100%;
+	margin: 3% auto 0% !important;
+}
+
+
+
+.footer {
+	width: 88.82%; 
+}
+
+}
+
+
+
+@media screen and (min-width:1521px) and (max-width : 1620px) {
+.header {
+	width: 90%;
+	border: 0px solid #000;
+	margin: 0px auto 85%;
+}
+
+.header-container {
+	width: 100%;
+	margin: 3% auto 0% !important;
+}
+
+
+
+.footer {
+	width: 84.15%; 
+}
+
+}
+
+
+@media screen and (min-width:1421px) and (max-width : 1520px) {
+.header {
+	width: 85%;
+	border: 0px solid #000;
+	margin: 0px auto 80%;
+}
+
+	
+.header-container {
+	width: 100%;
+	margin: 3% auto 0% !important;
+}
+
+
+
+.footer {
+	width: 79.475%; 
+}
+
+}
+
+
+@media screen and (min-width:1321px) and (max-width : 1420px) {
+
+
+.header {
+	width: 80%;
+	border: 0px solid #000;
+	margin: 0px auto 75%;
+}
+
+	
+.header-container {
+	width: 100%;
+	margin: 3% auto 0% !important;
+}
+
+
+
+.footer {
+	width: 74.8%; 
+}
+
+}
+
+@media screen and (min-width:1221px) and (max-width : 1320px) {
+.header {
+	width: 70%;
+	border: 0px solid #000;
+	margin: 0px auto 70%;
+}
+
+	
+.header-container {
+	width: 100%;
+	margin: 3% auto 0% !important;
+}
+
+.footer {
+	width: 65.45%; 
+}
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1121px) and (max-width : 1220px) {
+.header {
+	width: 65%;
+	border: 0px solid #000;
+	margin: 0px auto 65%;
+}
+
+	
+.header-container {
+	width: 100%;
+	margin: 3% auto 0% !important;
+}
+
+
+
+.footer {
+	width: 60.775%; 
+}
+
+}
+
+
+
+
+
+@media screen and (min-width:1021px) and (max-width : 1120px) {
+.header {
+	width: 60%;
+	border: 0px solid #000;
+	margin: 0px auto 60%;
+}
+
+	
+.header-container {
+	width: 100%;
+	margin: 3% auto 0% !important;
+}
+
+
+
+.footer {
+	width: 56.1%; 
+}
+}
+
+
+
+@media screen and (min-width:781px) and (max-width : 1020px) {
+body {
+	background-image: url("../_images/background.jpg");
+}
+
+.header {
+	width: 70%;
+	border: 0px solid #000;
+	margin: 0px auto 72.5%;
+}
+
+	
+.header-container {
+	width: 100%;
+	margin: 5% auto 0% !important;
+}
+
+
+
+.footer {
+	width: 65.38%; 
+}
+
+}
+
+
+
+@media screen and (min-width: 200px) and (max-width: 780px) {
+body {
+		background-image: url(../_images/mobile-bg.jpg);
+		background-size: 100% auto;
+}
+
+.header {
+	width: 100%;
+	border: 0px solid #000;
+	margin: 0px auto 115%;
+}
+
+	
+.header-container {
+	width: 100%;
+	margin: 5% auto 0% !important;
+}
+
+.footer {
+	width: 92.56%; 
+}
+
+
+
+}
