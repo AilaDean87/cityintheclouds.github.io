@@ -641,7 +641,7 @@ footer {
 
 @media screen and (min-width:781px) and (max-width : 1020px) {
 body {
-	background-image: url("../_images/background.jpg");
+	background-image: url("../images/cloudy_city_dark_2.jpg");
 }
 
 .header {
