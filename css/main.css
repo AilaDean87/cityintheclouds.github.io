@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:600);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
 @charset "UTF-8";
 /* CSS Document */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
@@ -18,6 +20,11 @@ hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
 	height: auto;
 }
 
+html, body {
+  min-height: 100%;
+  /*height: 100%;*/
+  /*margin: 0;*/
+}
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
 {display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}
@@ -26,7 +33,10 @@ blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-co
 i{font-style: italic;}
 strong{font-weight: bolder;color:#cccccc;}
 
-
+textarea {
+	resize: none;
+	height: auto;
+}
 
 /*************************/
 /******** GENERAL ********/
@@ -53,7 +63,7 @@ strong{font-weight: bolder;color:#cccccc;}
 
 
 .opacity:hover {
-	opacity: .5;
+	opacity: .9;
 }
 
 .imgSizer {
@@ -64,19 +74,50 @@ strong{font-weight: bolder;color:#cccccc;}
 	display: none;
 }
 
+.satisfy {
+	font-family: 'Satisfy', cursive;
+}
+
 /************************/
 /******** LAYOUT ********/
 /************************/
+
 body {
-	background-color: #4d4d4d;
+	background-color: #1d243d;
 	background-image: url("../images/cloudy_city_dark_2.jpg");
 	background-repeat:no-repeat;
-	-webkit-background-size:auto;
-	-moz-background-size:auto;
-	-o-background-size:auto;
-    background-size: auto;
+	-webkit-background-size:auto 100%;
+	-moz-background-size:auto 100%;
+	-o-background-size:auto 100%;
+    background-size: auto 100%;
 	background-position:top center;
 	
+}
+
+a:not(#logo) {
+	text-decoration: none;
+	color: #f6f6f6;
+	font-size: 1.2em;
+	display: inline-block;
+
+	/* Hover transition */
+	-o-transition:all .2s ease-in-out;
+	-ms-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+a:hover:not(#logo) { 
+    -o-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	color: #fafafa;
+}
+
+a + a:not(#logo) {
+    margin-left: 2em;
 }
 
 .container {
@@ -84,6 +125,46 @@ body {
 	max-width: 850px;
 	margin: 0px auto;
 	border: 0px solid #fff;
+}
+
+button {
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 1.4em;
+	line-height: 1.4;
+	vertical-align: bottom;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+
+	color: #f6f6f6;
+	background: rgba(0,0,0,0);
+	border: solid 4px #f6f6f6;
+	border-radius: 15px;
+
+	/* Hover transition */
+	-o-transition:all .2s ease-in-out;
+	-ms-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+button:focus {
+  outline: none
+}
+button:hover { 
+    -o-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	color: #fafafa;
 }
 
 /************************/
@@ -99,18 +180,35 @@ body {
 .header-container {
 	/*border: 0px solid #17C926;*/
 	width: 100%;
-	margin: 5% auto 0%;
+	margin: 5% auto 10%;
 
+}
+
+.header-helper {
+	font-size: 1.2em;
+	margin: 1% auto 0;
+	text-shadow: 
+		-1px -1px 0 #000,
+		 1px -1px 0 #000,
+		-1px  1px 0 #000,
+		 1px  1px 0 #000;
+	letter-spacing: .05em;
 }
 
 /* City in the Clouds logo */
 .logo {
-	width: 70%;
-	border: 0px solid #000;
-	margin: 0% auto 2%;
+	width: 40%;
+	height: auto;
 }
 
+#logo {
+	text-align: center;
+	width: 100px;
+}
 
+#logo img {
+	display: inline;
+}
 
 /* Purchase Links */
 .purchase-container {
@@ -133,16 +231,30 @@ body {
 .content {
 	width: 100%;
 	border: 0px solid #D40408;
+	margin: 5% auto 5%;
 }
 
 .announcement {
 	height: 50%;
-	width: 10%;
+	width: 100%;
+	text-align: center;
 }
+
+.announcement p {
+	margin: 1% auto 2%;
+	font-size: 3em;
+	color: #f6f6f6;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #2c2c2c, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
 .announcement img {
-	width: 300%;
+	width: 40%;
 	height: auto;
-	
+	display: block;
+	margin: auto;
 }
 
 .content-container {
@@ -152,31 +264,55 @@ body {
 
 }
 
+.listen {
+	margin: 2% auto 0;
+}
+
+.listen a {
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 2em;
+	line-height: 1.4;
+	vertical-align: bottom;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+
+	color: #f6f6f6;
+	background: rgba(0,0,0,0);
+	border: solid 4px #f6f6f6;
+	border-radius: 15px;
+}
+.listen a:focus {
+  outline: none
+}
+
 
 /************************/
 /******** FOOTER ********/
 /************************/
-.footer {
+
+footer {
+	text-align: center;
 	width: 93.5%;
 	border: 0px solid #0A6018;
-	margin: 0px auto 10%;
+	margin: 0px auto 2%;
+	color: #FFFFFF;
 }
 
+/*This is where problem of two line copyright is coming from*/
 .footer-container {
 	width: 67.5%; 
 	border: 0px solid #6AB973;
 	margin: 0px auto;	
-	max-width: 550px;
-
+	max-width: 560px; /* this line specifically */
 }
-
-
-.available-jan {
-	width: 41.5%;
-	margin: 0% 5% 4% 0%;
-	border: 0px solid #fff;
-}
-
 
 /* Navigation */
 .navigation-container {
@@ -192,17 +328,11 @@ body {
 	padding-left: 1%;
 }
 
-#music { width: 9.6%; }
-#video { width: 8.905%; }
-#tour { width: 7.465%; }
-#contact { width: 13.5%; }
-
-
 /* Social Link */
 .social-container {
 	width: 100%;
-	margin: 0px auto 4%;
-	max-width: 550px;
+	margin: 0px auto 2%;
+	max-width: 560px;
 }
 
 .social-link {
@@ -214,9 +344,9 @@ body {
 #facebook { width: 4.52%; }
 #twitter { width: 4.52%; }
 #instagram { width: 4.52%; }
-#anti { width: 7.09%; }
-#mailing-list { width: 6.633%; }
-#big-cartel { width: 4.52%; }
+#soundcloud { width: 6%; }
+#spotify { width: 4.52%; }
+#apple { width: 4.3%; }
 
 /* Copyright */
 .copyright-container {
@@ -227,15 +357,125 @@ body {
 
 .copyright {
 	margin: 0px auto;
-	width: 15%;
-
+	width: 20%;
 }
 
+/*******************************/
+/******** INPUT FIELDS ********/
+/*******************************/
 
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 1em;
+	max-width: 350px;
+	width: calc(100% - 2em);
+	vertical-align: top;
+}
 
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #aaa;
+	font-weight: bold;
+	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
 
+.input__field:focus {
+	outline: none;
+}
 
+.input__label {
+	display: inline-block;
+	float: right;
+	padding: 0 1em;
+	width: 40%;
+	/*color: #6a7989;*/
+	color: #FFFFFF;
+	/*font-weight: bold;*/
+	font-size: 80.25%;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 1.6em 0;
+	width: 100%;
+}
+
+/* Minoru */
+.input__field--minoru {
+	width: 100%;
+	background: #fff;
+	box-shadow: 0px 0px 0px 2px transparent;
+	color: #3d4765;
+	-webkit-transition: box-shadow 0.3s;
+	transition: box-shadow 0.3s;
+}
+
+.input__label--minoru {
+	padding: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.input__label--minoru::after {
+	content: '';
+  	position: absolute;
+  	top: 0;
+  	z-index: -1;
+  	width: 100%;
+  	height: 4em;
+	box-shadow: 0px 0px 0px 0px;
+	color: rgba(199,152,157, 0.6);
+}
+
+.input__field--minoru:focus {
+	box-shadow: 0px 0px 0px 2px #3d4765;
+}
+
+.input__field--minoru:focus + .input__label--minoru {
+	pointer-events: none;
+}
+
+.input__field--minoru:focus + .input__label--minoru::after {
+	-webkit-animation: anim-shadow 0.3s forwards;
+	animation: anim-shadow 0.3s forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+	to {
+		box-shadow: 0px 0px 100px 50px;
+    	opacity: 0;
+	}
+}
+
+@keyframes anim-shadow {
+	to {
+		box-shadow: 0px 0px 100px 50px;
+    	opacity: 0;
+	}
+}
+
+.input__label-content--minoru {
+	padding: 0.75em 0.15em;
+}
 
 /*******************************/
 /******** MEDIA QUERIES ********/
@@ -251,8 +491,6 @@ body {
 	width: 100%;
 	margin: 3% auto 0% !important;
 }
-
-
 
 .footer {
 	width: 88.82%; 

@@ -60,10 +60,10 @@
 			<a id="logo" href="index.html"><img class="logo" src="images/city_in_clouds.png" alt="City in the Clouds" /></a>
 
 			<div class="header-helper">
-				<a href="">HOME</a>
+				<a href="index.html">HOME</a>
 				<a href="about.html">ABOUT</a>
 				<a href="music.html">MUSIC</a>
-				<a href="contact.html">CONTACT</a>
+				<a href="">CONTACT</a>
 			</div>
 		</div>
 		
@@ -72,21 +72,43 @@
 
 	<!-- Main content -->
 	<div class="content">
+	<center>
 
-		<!-- New album announcement -->
-		<div class="announcement">
-			<p>AVAILABLE NOW!</p>
-			<img name="The Contents of Box 212" alt="The Contents of Box 212" src="images/contents_of_box_212.jpg">
+		<!-- <form method="POST" action="http://formspree.io/cloudycityinc@gmail.com">
+			<input type="name" name="name" placeholder="Your name">
+			<input type="email" name="email" placeholder="Your email">
+			<textarea name="message" placeholder="Your message"></textarea>
+			<button type="submit">Send</button>
+		</form> -->
 
-			<div class="listen">
-				<a href="http://found.ee/ZN0cO" target="_blank" class="link">ITUNES</a>
-		        <a href="http://found.ee/BU8oQ" target="_blank" class="link">AMAZON</a>
-		        <a href="http://found.ee/dw9DI" target="_blank" class="link">GOOGLE PLAY</a>
-		        <a href="http://found.ee/jCH7z" target="_blank" class="link">SPOTIFY</a>
-		        <a href="http://found.ee/JFSef" target="_blank" class="link">BANDCAMP</a>
-		    </div>
-		</div>
-
+		<form class="contact-form content" method="POST" action="http://formspree.io/cloudycityinc@gmail.com">
+			<span class="input input--minoru">
+				<label class="input__label input__label--minoru" for="input-13">
+					<span class="input__label-content input__label-content--minoru">Name</span>
+				</label>
+				<input type="text" name="name" class="input__field input__field--minoru" />
+			</span>
+			<br/>
+			<span class="input input--minoru">
+				<label class="input__label input__label--minoru" for="input-14">
+					<span class="input__label-content input__label-content--minoru">Email</span>
+				</label>
+				<input type="email" name="email" class="input__field input__field--minoru" />
+			</span>
+			<br/>
+			<span class="input input--minoru">
+				<label class="input__label input__label--minoru" for="input-15">
+					<span class="input__label-content input__label-content--minoru">Your Message</span>
+				</label>
+				<textarea type="text" name="message" class="input__field input__field--minoru" rows="10"></textarea>
+			</span>
+			<br/>
+			<!-- To prevent robots from submitting forms -->
+			<input type="text" name="_gotcha" style="display:none" />
+			<button type="submit">SUBMIT</button>
+		</form>
+	
+	</center>
 	</div>
 
 	<!-- Footer -->
