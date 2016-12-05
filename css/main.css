@@ -203,7 +203,7 @@ button:hover {
 
 #logo {
 	text-align: center;
-	width: 100px;
+	width: 100%;
 }
 
 #logo img {
@@ -688,6 +688,10 @@ body {
 	font-size: 1em;
 }
 
+.logo {
+	width: 50%;
+}
+
 .announcement p {
 	font-size: 2em;
 }
@@ -697,12 +701,25 @@ body {
 }
 
 a:not(#logo) {
+	text-align: center;
 	font-size: .8em;
-	margin: 0 auto 2%;
+	margin: 0 auto 3%;
 }
 
 a + a:not(#logo) {
     margin-left: 1.2em;
+}
+
+iframe {
+	width: 80%;
+}
+
+button {
+	font-size: 1em;
+}
+
+.input {
+	width: calc(100% - 4em);
 }
 
 .footer {
