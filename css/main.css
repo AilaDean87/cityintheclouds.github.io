@@ -293,6 +293,11 @@ button:hover {
   outline: none
 }
 
+iframe {
+	width: 400px;
+	height: 472px;
+}
+
 
 /************************/
 /******** FOOTER ********/
@@ -711,7 +716,8 @@ a + a:not(#logo) {
 }
 
 iframe {
-	width: 80%;
+	width: 300px;
+	height: 354px;
 }
 
 button {
