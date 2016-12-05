@@ -688,12 +688,21 @@ body {
 	font-size: 1em;
 }
 
+.announcement p {
+	font-size: 2em;
+}
+
+.announcement img {
+	width: 60%;
+}
+
 a:not(#logo) {
-	font-size: 1em;
+	font-size: .8em;
+	margin: 0 auto 2%;
 }
 
 a + a:not(#logo) {
-    margin-left: 1.5em;
+    margin-left: 1.2em;
 }
 
 .footer {
