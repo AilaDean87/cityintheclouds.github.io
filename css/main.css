@@ -710,6 +710,9 @@ a:not(#logo) {
 	font-size: .8em;
 	margin: 0 auto 3%;
 }
+a:hover:not(#logo) { 
+	transform: scale(1);
+}
 
 a + a:not(#logo) {
     margin-left: 1.2em;
@@ -722,6 +725,9 @@ iframe {
 
 button {
 	font-size: 1em;
+}
+button:hover { 
+	transform: scale(1);
 }
 
 .input {
