@@ -670,7 +670,7 @@ body {
 @media screen and (min-width: 200px) and (max-width: 780px) {
 body {
 		background-image: url(../images/mobile_bg.jpg);
-		background-size: 100% auto;
+		background-size: auto 100%;
 }
 
 .header {
@@ -678,15 +678,27 @@ body {
 	border: 0px solid #000;
 	margin: 0px auto 115%;
 }
-
 	
 .header-container {
 	width: 100%;
 	margin: 5% auto 0% !important;
 }
 
+.header-helper {
+	font-size: 1em;
+}
+
+a:not(#logo) {
+	font-size: 1em;
+}
+
+a + a:not(#logo) {
+    margin-left: 1.5em;
+}
+
 .footer {
-	width: 92.56%; 
+	width: 100%;
+	/*width: 92.56%; */
 }
 
 
