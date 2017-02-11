@@ -102,7 +102,7 @@ p {
 	text-align: justify
 }
 
-a:not(#logo) {
+a:not(#logo):not(#email) {
 	text-decoration: none;
 	color: #f6f6f6;
 	font-size: 1.2em;
@@ -115,7 +115,7 @@ a:not(#logo) {
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
 }
-a:hover:not(#logo) { 
+a:hover:not(#logo):not(#email) { 
     -o-transform: scale(1.3);
 	-ms-transform: scale(1.3);
 	-moz-transform: scale(1.3);
@@ -124,7 +124,7 @@ a:hover:not(#logo) {
 	color: #fafafa;
 }
 
-a + a:not(#logo) {
+a + a:not(#logo):not(#email) {
     margin-left: 2em;
 }
 
@@ -322,6 +322,18 @@ iframe {
 	margin: 2% auto 0;
 	width: 30%;
 	height: auto;
+}
+
+.footer-credits {
+	max-width: 24%;
+	font-size: 0.8em;
+	text-align: center;
+}
+.footer-credits p {
+	text-align: center;
+}
+#email {
+	color: #f6f6f6;
 }
 
 
@@ -761,6 +773,10 @@ button:hover {
 .about-text p {
 	/*margin: 0 auto 10%;*/
 	max-width: 80%;
+}
+
+.footer-credits {
+	max-width: 50%;
 }
 
 #band-1 {
