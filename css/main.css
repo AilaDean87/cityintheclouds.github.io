@@ -733,6 +733,10 @@ a + a:not(#logo) {
     margin-left: 1.2em;
 }
 
+p {
+	font-size: 1em;
+}
+
 iframe {
 	width: 300px;
 	height: 354px;
@@ -757,6 +761,16 @@ button:hover {
 .about-text p {
 	/*margin: 0 auto 10%;*/
 	max-width: 80%;
+}
+
+#band-1 {
+	width: 75%;
+	height: auto;
+}
+
+#band-2 {
+	width: 50%;
+	height: auto;
 }
 
 }
