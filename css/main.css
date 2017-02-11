@@ -94,6 +94,14 @@ body {
 	
 }
 
+p {
+	color: #f6f6f6;
+	font-size: 1.2em;
+	line-height: 120%;
+	display: inline-block;
+	text-align: justify
+}
+
 a:not(#logo) {
 	text-decoration: none;
 	color: #f6f6f6;
@@ -261,7 +269,13 @@ button:hover {
 	border: 0px solid #fff;
 	margin: 0px auto;	
 	min-height: 1200px;
+}
 
+.about-text p {
+	/*margin: 0 auto 10%;*/
+	padding: 0.2em 0.5em;
+	background-color:rgba(61,71,101,.4);
+	/*margin: 10% auto 0;*/
 }
 
 .listen {
@@ -296,6 +310,17 @@ button:hover {
 iframe {
 	width: 400px;
 	height: 472px;
+}
+
+#band-1 {
+	width: 50%;
+	height: auto;
+}
+
+#band-2 {
+	margin: 2% auto 0;
+	width: 30%;
+	height: auto;
 }
 
 
