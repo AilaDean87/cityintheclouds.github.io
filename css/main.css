@@ -273,6 +273,7 @@ button:hover {
 
 .about-text p {
 	/*margin: 0 auto 10%;*/
+	max-width: 60%;
 	padding: 0.2em 0.5em;
 	background-color:rgba(61,71,101,.4);
 	/*margin: 10% auto 0;*/
@@ -616,13 +617,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
 @media screen and (min-width:1121px) and (max-width : 1220px) {
 .header {
 	width: 65%;
@@ -645,9 +639,6 @@ footer {
 }
 
 
-
-
-
 @media screen and (min-width:1021px) and (max-width : 1120px) {
 .header {
 	width: 60%;
@@ -667,7 +658,6 @@ footer {
 	width: 56.1%; 
 }
 }
-
 
 
 @media screen and (min-width:781px) and (max-width : 1020px) {
@@ -764,6 +754,9 @@ button:hover {
 	/*width: 92.56%; */
 }
 
-
+.about-text p {
+	/*margin: 0 auto 10%;*/
+	max-width: 80%;
+}
 
 }
