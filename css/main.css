@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis:600);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
 
 @charset "UTF-8";
@@ -175,6 +175,29 @@ button:hover {
 	color: #fafafa;
 }
 
+h1 {
+	margin: 1% auto;
+	font-size: 3em;
+	font-weight: 600;
+	color: #f6f6f6;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #2c2c2c, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+h2 {
+	margin: 1% auto 2%;
+	font-size: 2em;
+	font-weight: 600;
+	font-style: italic;
+	letter-spacing: .05em;
+	color: #f6f6f6;
+}
+
+.row {
+	margin: 2% auto 2%;
+}
+
 /************************/
 /******** HEADER ********/
 /************************/
@@ -194,6 +217,7 @@ button:hover {
 
 .header-helper {
 	font-size: 1.2em;
+	font-weight: 600;
 	margin: 1% auto 0;
 	text-shadow: 
 		-1px -1px 0 #000,
@@ -232,7 +256,6 @@ button:hover {
 	border: 0px solid #fff;
 }
 
-
 /************************/
 /******** CONTENT *******/
 /************************/
@@ -251,6 +274,7 @@ button:hover {
 .announcement p {
 	margin: 1% auto 2%;
 	font-size: 3em;
+	font-weight: 600;
 	color: #f6f6f6;
     letter-spacing: .05em;
     text-shadow: 
@@ -277,6 +301,10 @@ button:hover {
 	padding: 0.2em 0.5em;
 	background-color:rgba(61,71,101,.4);
 	/*margin: 10% auto 0;*/
+}
+
+.highlight {
+	background-color: rgba(204, 222, 252, 0.3);
 }
 
 .listen {
@@ -314,13 +342,14 @@ iframe {
 }
 
 #band-1 {
-	width: 50%;
+	width: 40%;
 	height: auto;
+	margin-right: 2%; 
 }
 
 #band-2 {
 	margin: 2% auto 0;
-	width: 30%;
+	width: 25.8%;
 	height: auto;
 }
 
