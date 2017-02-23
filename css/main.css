@@ -729,93 +729,115 @@ body {
 
 
 @media screen and (min-width: 200px) and (max-width: 780px) {
-body {
-		background-image: url(../images/mobile_bg.jpg);
-		background-size: auto 100%;
-}
+	body {
+			background-image: url(../images/mobile_bg.jpg);
+			background-size: auto 100%;
+	}
 
-.header {
-	width: 100%;
-	border: 0px solid #000;
-	margin: 0px auto 115%;
-}
-	
-.header-container {
-	width: 100%;
-	margin: 5% auto 0% !important;
-}
+	.header {
+		width: 100%;
+		border: 0px solid #000;
+		margin: 0px auto 115%;
+	}
+		
+	.header-container {
+		width: 100%;
+		margin: 5% auto 0% !important;
+	}
 
-.header-helper {
-	font-size: 1em;
-}
+	.header-helper {
+		font-size: 1em;
+	}
 
-.logo {
-	width: 50%;
-}
+	.logo {
+		width: 50%;
+	}
 
-.announcement p {
-	font-size: 2em;
-}
+	.announcement p {
+		font-size: 2em;
+	}
 
-.announcement img {
-	width: 60%;
-}
+	.announcement img {
+		width: 60%;
+	}
 
-a:not(#logo) {
-	text-align: center;
-	font-size: .8em;
-	margin: 0 auto 3%;
-}
-a:hover:not(#logo) { 
-	transform: scale(1);
-}
+	a:not(#logo) {
+		text-align: center;
+		font-size: .8em;
+		margin: 0 auto 3%;
+	}
+	a:hover:not(#logo) { 
+		transform: scale(1);
+	}
 
-a + a:not(#logo) {
-    margin-left: 1.2em;
-}
+	a + a:not(#logo) {
+	    margin-left: 1em;
+	}
 
-p {
-	font-size: 1em;
-}
+	h1 {
+		font-size: 2em;
+	    letter-spacing: .04em;
+	}
+	h2 {
+		margin: 1% auto 2%;
+		font-size: 1.5em;
+		letter-spacing: .04em;
+	}
 
-iframe {
-	width: 300px;
-	height: 354px;
-}
+	p {
+		font-size: 1em;
+	}
 
-button {
-	font-size: 1em;
-}
-button:hover { 
-	transform: scale(1);
-}
+	iframe {
+		width: 300px;
+		height: 354px;
+	}
 
-.input {
-	width: calc(100% - 4em);
-}
+	button {
+		font-size: 1em;
+	}
+	button:hover { 
+		transform: scale(1);
+	}
 
-.footer {
-	width: 100%;
-	/*width: 92.56%; */
-}
+	.input {
+		width: calc(100% - 4em);
+	}
 
-.about-text p {
-	/*margin: 0 auto 10%;*/
-	max-width: 80%;
-}
+	.listen {
+		margin: 2% auto 0;
+		text-align: center;
+	}
 
-.footer-credits {
-	max-width: 50%;
-}
+	.listen a {
+		display: inline-block;
+		padding: 10px 15px;
+		font-size: 1.8em;
+		line-height: 1.4;
+	}
 
-#band-5 {
-	width: 60%;
-	height: auto;
-}
+	.footer {
+		width: 100%;
+		/*width: 92.56%; */
+	}
 
-#band-6 {
-	width: 50%;
-	height: auto;
-}
+	.about-text p {
+		/*margin: 0 auto 10%;*/
+		max-width: 80%;
+	}
+
+	.footer-credits {
+		max-width: 50%;
+	}
+
+	#band-5 {
+		width: 60%;
+		height: auto;
+	}
+
+	#band-6 {
+		width: 50%;
+		height: auto;
+	}
 
 }
