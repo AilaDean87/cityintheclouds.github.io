@@ -750,7 +750,7 @@ body {
 	}
 
 	.logo {
-		width: 50%;
+		width: 60%;
 	}
 
 	.announcement p {
@@ -764,7 +764,7 @@ body {
 	a:not(#logo) {
 		text-align: center;
 		font-size: .8em;
-		margin: 0 auto 3%;
+		margin: 0 auto 2%;
 	}
 	a:hover:not(#logo) { 
 		transform: scale(1);
@@ -776,12 +776,10 @@ body {
 
 	h1 {
 		font-size: 2em;
-	    letter-spacing: .04em;
 	}
 	h2 {
 		margin: 1% auto 2%;
 		font-size: 1.5em;
-		letter-spacing: .04em;
 	}
 
 	p {
