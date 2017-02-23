@@ -761,17 +761,17 @@ body {
 		width: 60%;
 	}
 
-	a:not(#logo) {
+	a:not(#logo):not(#email) {
 		text-align: center;
 		font-size: .8em;
 		margin: 0 auto 2%;
 	}
-	a:hover:not(#logo) { 
-		transform: scale(1);
+	a:hover:not(#logo):not(#email) { 
+		transform: none;
 	}
 
-	a + a:not(#logo) {
-	    margin-left: 1em;
+	a + a:not(#logo):not(#email) {
+    	margin-left: 1em;
 	}
 
 	h1 {
@@ -793,9 +793,23 @@ body {
 
 	button {
 		font-size: 1em;
+		padding: 8px 12px;
+		line-height: 1.2;
+		border: solid 3px #f6f6f6;
+
+		/* Hover transition */
+		-o-transition:none;
+		-ms-transition:none;
+		-moz-transition:none;
+		-webkit-transition:none;
+		transition:none;
 	}
 	button:hover { 
-		transform: scale(1);
+		-o-transform: none;
+		-ms-transform: none;
+		-moz-transform: none;
+		-webkit-transform: none;
+		transform: none;
 	}
 
 	.input {
