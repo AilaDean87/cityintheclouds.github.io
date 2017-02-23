@@ -341,15 +341,15 @@ iframe {
 	height: 472px;
 }
 
-#band-1 {
+#band-5 {
 	width: 40%;
 	height: auto;
 	margin-right: 2%; 
 }
 
-#band-2 {
-	margin: 2% auto 0;
-	width: 25.8%;
+#band-6 {
+	margin: 1% auto 0;
+	width: 40%;
 	height: auto;
 }
 
@@ -808,12 +808,12 @@ button:hover {
 	max-width: 50%;
 }
 
-#band-1 {
-	width: 75%;
+#band-5 {
+	width: 60%;
 	height: auto;
 }
 
-#band-2 {
+#band-6 {
 	width: 50%;
 	height: auto;
 }
