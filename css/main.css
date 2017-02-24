@@ -341,6 +341,18 @@ iframe {
 	height: 472px;
 }
 
+#band-1 {
+	width: 40%;
+	height: auto;
+	margin-right: 1%; 
+}
+
+#band-2 {
+	margin: 1% auto 0;
+	width: 26%;
+	height: auto;
+}
+
 #band-5 {
 	width: 30%;
 	height: auto;
