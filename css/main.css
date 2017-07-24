@@ -376,7 +376,50 @@ iframe {
 #email {
 	color: #f6f6f6;
 }
+.col3-equal {
+	margin: auto;
+	font-size: 1.4em;
+	width: 80%;
+	height: 30px;
+	background-color: rgba(29,36,61,0.8);
+	color: #f6f6f6;
+	padding: 1em 0;
+}
+.col3-equal:nth-child(odd) {
+	background-color: rgba(74,79,99,0.8);
+}
 
+.group-left {
+	float: left;
+	clear: left;
+}
+.field--name-asf-events-small-date {
+	position: absolute;
+	left: 12%;
+	padding: .2em 0;
+}
+
+.group-middle {
+	float: left;
+	position: absolute;
+	padding-left: 10em;
+	margin-top: -0.4em;
+}
+
+.group-middle .field--name-asf-events-city {
+	padding-top: .2em;
+	color: rgba(221,221,221,0.9);
+}
+
+.group-right {
+	float: right;
+	clear: right;
+	padding-right: 1em;
+}
+
+.field__item .time {
+	margin-left: 1em;
+}
 
 /************************/
 /******** FOOTER ********/
@@ -874,4 +917,23 @@ body {
 		height: auto;
 	}
 
+	.col3-equal {
+		width: 90%;
+		font-size: 0.7em;
+		height: 26px;
+		padding: 0.8em 0;
+	}
+	.field--name-asf-events-small-date {
+		left: 8%;
+	}
+	.field__item .time {
+		margin-left: 0.6em;
+	}
+
+	.group-middle {
+		float: left;
+		position: absolute;
+		padding-left: 8em;
+		margin-top: -0.3em;
+	}
 }
